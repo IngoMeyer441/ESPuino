@@ -52,7 +52,7 @@
     //#define IR_CONTROL_ENABLE             // Enables remote control (https://forum.espuino.de/t/neues-feature-fernsteuerung-per-infrarot-fernbedienung/265)
     #define CACHED_PLAYLIST_ENABLE          // Enables playlist-caching (infos: https://forum.espuino.de/t/neues-feature-cached-playlist/515)
     //#define PAUSE_WHEN_RFID_REMOVED       // Playback starts when card is applied and pauses automatically, when card is removed (https://forum.espuino.de/t/neues-feature-pausieren-wenn-rfid-karte-entfernt-wurde/541)
-    //#define PAUSE_ON_MIN_VOLUME           // When playback is active and volume is changed to zero, playback is paused automatically. Playback is continued if volume reaches 1. (https://forum.espuino.de/t/neues-feature-pausieren-wenn-rfid-karte-entfernt-wurde/541)
+    #define PAUSE_ON_MIN_VOLUME           // When playback is active and volume is changed to zero, playback is paused automatically. Playback is continued if volume reaches 1. (https://forum.espuino.de/t/neues-feature-pausieren-wenn-rfid-karte-entfernt-wurde/541)
     #define DONT_ACCEPT_SAME_RFID_TWICE   // RFID-reader doesn't accept the same RFID-tag twice in a row (unless it's a modification-card or RFID-tag is unknown in NVS). Flag will be ignored silently if PAUSE_WHEN_RFID_REMOVED is active. (https://forum.espuino.de/t/neues-feature-dont-accept-same-rfid-twice/1247)
     #define SAVE_PLAYPOS_BEFORE_SHUTDOWN  // When playback is active and mode audiobook was selected, last play-position is saved automatically when shutdown is initiated
     #define SAVE_PLAYPOS_WHEN_RFID_CHANGE // When playback is active and mode audiobook was selected, last play-position is saved automatically for old playlist when new RFID-tag is applied
@@ -126,9 +126,9 @@
     #define BUTTON_4_SHORT    CMD_NOTHING
     #define BUTTON_5_SHORT    CMD_NOTHING
 
-    #define BUTTON_0_LONG     CMD_LASTTRACK
-    #define BUTTON_1_LONG     CMD_FIRSTTRACK
-    #define BUTTON_2_LONG     CMD_TELL_IP_ADDRESS
+    #define BUTTON_0_LONG     CMD_NEXTTRACK
+    #define BUTTON_1_LONG     CMD_PREVTRACK
+    #define BUTTON_2_LONG     CMD_PLAYPAUSE
     #define BUTTON_3_LONG     CMD_SLEEPMODE
     #define BUTTON_4_LONG     CMD_NOTHING
     #define BUTTON_5_LONG     CMD_NOTHING
